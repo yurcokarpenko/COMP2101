@@ -17,8 +17,8 @@
 
 echo "Setuid files:"
 echo "============="
-find / -type f -exec ls -lh {} + 2>/dev/null | sort -k 5 -hk 2 -r | awk '{print $4, $5, $9}' | head -12 
-echo ""
+find / -type f -exec ls -lh {} + 2>/dev/null | sort -k 5 -hk 2 -r | awk '{print $4, $5, $9}' | head -12
+echo "Lab 1"
 
 # for the task, add
 # commands to display a title
