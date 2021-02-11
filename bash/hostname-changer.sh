@@ -16,7 +16,7 @@ s="pc"$stvar
 # If that hostname is not already in the /etc/hosts file, change the old hostname in that file to the new name using sed or something similar and
 #     tell the user you did that
 #e.g. sed -i "s/$oldname/$newname/" /etc/hosts
-grep "$s" /etc/hosts  || (sudo sed -i "s/$x/$s/" /etc/hosts && echo "Changed the hostname to: $s")
+grep "$s" /etc/hosts || (sudo sed -i "s/$x/$s/" /etc/hosts && echo "Changed the hostname to: $s")
 # If that hostname is not the current hostname, change it using the hostnamectl command and
 #     tell the user you changed the current hostname and they should reboot to make sure the new name takes full effect
 #e.g. hostnamectl set-hostname $newname
