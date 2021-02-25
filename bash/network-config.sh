@@ -76,7 +76,7 @@
 #   External Name   : $myExternalName
 
 
-lanadr1=$(ip a |awk '/: e/{gsub(/:/,"");print $2}')
+lanadr1=$(ip a |awk '/: ens33/{gsub(/:/,"");print $2}')
 MyLANaddress=$(ip a s $lanadr1 |awk '/inet /{gsub(/\/.*/,"");print $2}')
 
 
