@@ -6,7 +6,6 @@
 #   Hostname        : hostname
 #   LAN Address     : 192.168.2.2
 #   LAN Hostname    : host-name-from-hosts-file
-#   External IP     : 1.2.3.4
 #   External Name   : some.name.from.our.isp
 
 # Task 1: Clean up this script by moving the commands that generate the output to separate lines
