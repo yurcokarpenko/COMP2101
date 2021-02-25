@@ -81,7 +81,7 @@ MyLANaddress=$(ip a s $lanadr1 |awk '/inet /{gsub(/\/.*/,"");print $2}')
 
 
 
-hname1=$(ip a |awk '/: ens33/{gsub(/:/,"");print $2}')
+hname1=$(ip a |awk '/: e/{gsub(/:/,"");print $2}')
 hname2=$(ip a s $hname1| awk '/inet /{gsub(/\/.*/,"");print $2}')
 MyHostname=$(getent hosts $hname2 | awk '{print $2}')
 
